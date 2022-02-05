@@ -1,0 +1,112 @@
+:root {
+    --h1d: rgba(230, 230, 230, 1);
+    --h1l: rgba(10, 10, 10, 1);
+    --pd: rgba(200, 200, 200, 1);
+    --pl: rgba(25, 25, 25, 1)
+}
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+p {
+    color: var(--pd);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--h1d);
+}
+body {
+    background-color: var(--h1l);
+    padding: 0;
+    margin: 0;
+}
+.main
+{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--pl);
+    height: 100vh;
+    margin: 0 auto;
+}
+.message-area {
+    display: flex;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    flex-flow: column;
+}
+.dog-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: not-allowed;
+    border-radius: 0px 0px 8px 8px;
+    margin: 0 auto;
+}
+.user-img-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.forward-img-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+.user-message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    background-color: #444;
+    border-radius: 10px 0px 10px 10px;
+    box-shadow: 0px 0px 10px 0px #00000055;
+    justify-content: center;
+    margin: 20px;
+}
+.forward-message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    background-color: #444;
+    border-radius: 0px 10px 10px 10px;
+    box-shadow: 0px 0px 10px 0px #00000055;
+    justify-content: center;
+    margin: 20px;
+}
+.send-button {
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    color: var(--h1l);
+    background-color: var(--h1d);
+    margin-right: 40px;
+}
+.input-area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-top: solid 1px #666;
+    background-color: #444;
+}
+.username {
+    color: var(--h1d);
+    font-weight: bold;
+    margin-left: 1.5em;
+}
+.msg-text {
+    margin-left: 1em;
+}
