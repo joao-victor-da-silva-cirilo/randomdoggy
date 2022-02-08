@@ -1,0 +1,27 @@
+{
+  "name": "randomdoggy",
+  "version": "1.0.0",
+  "description": "Generate a random dog image.",
+  "main": "index.html",
+  "scripts": {
+    "start": "nodemon server.js",
+    "compile": "sass --watch src/sass:src/public/styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JVSCirilo/randomdoggy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JVSCirilo/randomdoggy/issues"
+  },
+  "homepage": "https://github.com/JVSCirilo/randomdoggy#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

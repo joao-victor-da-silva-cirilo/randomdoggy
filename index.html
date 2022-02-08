@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/public/styles/index.css">
+    <link rel="stylesheet" href="src/public/styles/responsive.css">
+    <title>Randomdoggy</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Randomdoggy </h1>
+            <div class="credit-area">
+                <p class="credit-text">made by <a target="_blank" href="https://github.com/JVSCirilo/randomdoggy"> JVSCirilo</a></p>
+                <button class="clear-button" id="clear-cache" onclick="deleteData()">Clear images</button>
+            </div>
+        </div>
+    </header>
+    <main id="app" class="main">
+        <div class="content" id="content">
+            <div id="message-area" class="message-area">
+                <div class="forward-msg-container">
+                    <div class="forward-message">
+                        <p class="username">Welcome!</p>
+                        <img class="dog-image"src="https://images.dog.ceo/breeds/samoyed/n02111889_6183.jpg">    
+                        <p class="msg-text">
+                            This is a static message. Try to click on <strong>"Randomdoggy"</strong> below...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="input-area">
+                <button class="send-button" id="send">Randomdoggy</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+    <script src="./index.js"></script>
+</html>
