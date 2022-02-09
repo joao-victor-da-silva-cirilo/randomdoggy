@@ -24,6 +24,8 @@ req_button.addEventListener('click', ()=>{
             await request().then(()=>{
                 createMessage(message_area, images[clicks].link, clicks)
                 clicks++
+            }).catch(e => {
+                errorwarning(e)
             })
         }
         init()
@@ -41,11 +43,11 @@ const request = async () => {
         images.push({id: clicks, link: `${data.message}`})
         localStorage.setItem(localstorage_img_key, JSON.stringify(images))
     } catch (error) {
-        console.error(error)
+        errorwarning(error)
     }
 }
 
-function createMessage (htmlelement, url, id) {
+function createMessage (htmlelement, url, id) {    
     if(images.length > 0) {
         let messagecontainerCSS = 'user-msg-container'
         let messagedivCLASS = 'user-message';
@@ -79,13 +81,17 @@ const errorwarning = error => {
          wrngtxtCLASS = 'wrng-txt'
          
          let wrngDIV = document.createElement('div')
+         let wrngTITLE = document.createElement('p')
          let wrngTXT = document.createElement('p')
+
          wrngTXT.innerText = `${error}`;
+         wrngTITLE.innerText = "Error"
          wrngDIV.id = 'wrng';
          
          wrngDIV.classList.add(wrngCLASS)
+         wrngTITLE.classList.add(wrngtxtCLASS)
          wrngTXT.classList.add(wrngtxtCLASS)
-         wrngDIV.append(wrngTXT)
+         wrngDIV.append(wrngTITLE, wrngTXT)
          
          body.prepend(wrngDIV)
          return

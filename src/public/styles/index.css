@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@400;700&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+}
+
 html {
+  font-family: "Roboto", sans-serif;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -25,6 +29,14 @@ a:hover {
   text-decoration: underline;
 }
 
+@keyframes top-to-down {
+  0% {
+    margin-top: -100%;
+  }
+  100% {
+    margin-top: strech;
+  }
+}
 .forward-msg-container {
   width: 100%;
   display: flex;
@@ -185,17 +197,19 @@ body a {
 }
 
 .wrng {
-  z-index: 1;
+  z-index: 20;
   left: 50%;
   transform: translateX(-50%);
-  top: 20px;
+  top: 15%;
   position: fixed;
   background-color: #f35d5d;
   max-width: 500px;
+  animation-name: top-to-down;
+  animation-duration: 0.5s;
 }
 .wrng p {
   margin: 20px;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 

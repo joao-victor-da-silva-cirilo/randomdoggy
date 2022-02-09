@@ -3,9 +3,7 @@
 - [en-us](#enus)
 - [pt-br](#ptbr)
 
-<a id="enus"></a>
-
-## About
+## <a name="enus" />About
 
 App made for the unique purpose of consuming an API of random dog images
 
@@ -13,12 +11,10 @@ App made for the unique purpose of consuming an API of random dog images
 
 - [Dog Ceo API](https://dog.ceo/dog-api/)
 
-<a id="ptbr"></a>
-
-## Sobre
+## <a name="ptbr" />Sobre
 
 Aplicação feita com o propósito de consumir uma API de imagens aleatórias de cachorro
 
-## API Utilizada
+### API Utilizada
 
 - [Dog Ceo API](https://dog.ceo/dog-api/)

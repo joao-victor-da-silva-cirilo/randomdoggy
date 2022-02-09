@@ -1,7 +1,3 @@
-/src/sass
-/src/public/styles/*.map
-/src/public/assets
 /node_modules
 /package-lock.json
-/package.json
 /server.js
