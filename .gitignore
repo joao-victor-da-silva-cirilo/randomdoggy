@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 /node_modules
 /package-lock.json
-=======
-/src/public/assets
-/node_modules
-/package-lock.json
->>>>>>> 789983083ca1694157bef21831eb8cdbb89db3fb
 /server.js
